@@ -210,10 +210,14 @@
   <button type="button" class="tablink active" onclick="openTab(event, 'overview')">
     Overview
   </button>
+  <button type="button" class="tablink" onclick="openTab(event, 'geo')">
+    Geographic & State-Level Disparities
+  </button>
   <button type="button" class="tablink" onclick="openTab(event, 'heart')">
     Heart Disease Insights
   </button>
 </nav>
+
 
 
   <div id="overview" class="tabcontent active">
@@ -318,6 +322,35 @@
 </div>
 </div>
 
+<div id="geo" class="tabcontent">
+  <h2>Geographic & State-Level Disparities</h2>
+
+  <p class="subtitle">
+    Mortality rates vary widely across U.S. states, revealing geographic disparities
+    driven by differences in healthcare access, socioeconomic conditions, and local policies.
+  </p>
+
+  <div class="viz">
+    <h3>State-Level Mortality Patterns</h3>
+    <iframe src="viz4_choropleth.html" title="Choropleth"></iframe>
+  </div>
+
+  <div class="viz">
+    <h3>Variation in Death Rates Across States</h3>
+    <img src="viz6.png" alt="Box Plot">
+  </div>
+
+  <div class="viz">
+    <h3>State Trends Over Time</h3>
+    <iframe src="viz9_line_map.html" title="State Trends"></iframe>
+  </div>
+
+  <div class="viz">
+    <h3>Distribution of State-Level Death Rates</h3>
+    <img src="viz10.png" alt="Violin Plot">
+  </div>
+</div>
+    
 <div id="heart" class="tabcontent">
   <h2>Heart Disease: Focused Insights</h2>
 
