@@ -16,7 +16,51 @@
     --radius: 18px;
     --accent: #7dd3fc;   /* light blue */
     --accent2:#a78bfa;   /* violet */
+
+  /* ---------- TABS (make buttons big + make switching visible) ---------- */
+  .tabs{
+    margin: 18px 0 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
   }
+  
+  .tablink{
+    appearance: none;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.06);
+    color: var(--text);
+    padding: 12px 16px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.08s ease, background 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .tablink:hover{
+    background: rgba(255,255,255,0.10);
+    transform: translateY(-1px);
+  }
+  
+  .tablink.active{
+    border-color: rgba(125,211,252,0.55);
+    background: linear-gradient(90deg, rgba(125,211,252,0.22), rgba(167,139,250,0.20));
+  }
+  
+  /* KEY PART: hide all tab content by default, show only the active one */
+  .tabcontent{ display: none; }
+  .tabcontent.active{ display: block; }
+  
+  /* Optional: make h3 match your theme */
+  .viz h3{
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+    color: var(--text);
+  }
+  
+      
+    }
 
   * { box-sizing: border-box; }
 
@@ -149,6 +193,7 @@
 </head>
 
 <body>
+  <div class="container">
   <h1>Leading Causes of Death in the United States</h1>
   <p class="subtitle">
     This project analyzes National Center for Health Statistics (NCHS) data to explore trends and patterns in U.S. mortality
@@ -160,13 +205,14 @@
   </p>
 
   <nav class="tabs">
-  <button class="tablink active" onclick="openTab(event, 'overview')">
+  <button type="button" class="tablink active" onclick="openTab(event, 'overview')">
     Overview
   </button>
-  <button class="tablink" onclick="openTab(event, 'heart')">
+  <button type="button" class="tablink" onclick="openTab(event, 'heart')">
     Heart Disease Insights
   </button>
 </nav>
+
 
   <div id="overview" class="tabcontent active">
   <div class="viz">
@@ -306,6 +352,6 @@ function openTab(evt, tabName) {
 }
 </script>
 
-  
+</div>
 </body>
 </html>
