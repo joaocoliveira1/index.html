@@ -48,16 +48,19 @@
     background: linear-gradient(90deg, rgba(125,211,252,0.22), rgba(167,139,250,0.20));
   }
   
-  /* KEY PART: hide all tab content by default, show only the active one */
+  /* hide all tab content by default, show only the active one */
   .tabcontent{ display: none; }
   .tabcontent.active{ display: block; }
   
-  /* Optional: make h3 match your theme */
+  
   .viz h3{
-    margin: 0 0 10px;
-    font-size: 1.05rem;
+    margin: 0 0 14px;
+    font-size: 1.3rem;         
+    font-weight: 650;
+    letter-spacing: -0.01em;
     color: var(--text);
-  }
+}
+
   
       
     }
@@ -130,14 +133,15 @@
   }
 
   .viz h2{
-    margin: 0 0 25px;
-    font-size: 1.6rem;          
-    font-weight: 700;         
-    letter-spacing: -0.018em;
+    margin: 0 0 28px;
+    font-size: 1.85rem;          
+    font-weight: 750;            
+    letter-spacing: -0.02em;
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
 }
+
 
 
   /* Small gradient “pill” before headings */
@@ -151,13 +155,16 @@
   }
 
   .insight{
-    margin: 0 0 12px;
-    padding-left: 18px;
-    color: rgba(255,255,255,0.86);
-  }
+    margin: 0 0 18px;
+    padding-left: 22px;
+    font-size: 1.15rem;          
+    line-height: 1.7;            
+    color: rgba(255,255,255,0.90);
+}
+
 
   .insight li{
-    margin: 6px 0;
+    margin: 10px 0;
   }
 
   /* Media: images + iframes */
