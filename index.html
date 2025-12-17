@@ -7,15 +7,16 @@
   <style>
   :root{
       --bg: #111827;                  
-      --panel: rgba(15, 23, 42, 0.78);
-      --panel2: rgba(15, 23, 42, 0.90);
+      --panel: rgba(255,255,255,0.10);
+      --panel2: rgba(255,255,255,0.16);
       --text: rgba(255,255,255,0.92);
       --muted: rgba(255,255,255,0.72);
       --border: rgba(255,255,255,0.14);
       --shadow: 0 18px 55px rgba(0,0,0,0.35);
       --radius: 18px;
-      --accent: #7dd3fc;             
-      --accent2:#a78bfa; 
+      --accent: #38bdf8;   
+      --accent2: #c084fc;  
+
 
   .tabs{
     margin: 18px 0 10px;
@@ -144,23 +145,32 @@
 
 
 
-  /* Small gradient “pill” before headings */
+ 
   .viz h2::before{
-    content:"";
-    width: 10px;
-    height: 10px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, var(--accent), var(--accent2));
-    box-shadow: 0 0 0 4px rgba(125,211,252,0.15);
-  }
+  content:"";
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  box-shadow: 
+    0 0 0 4px rgba(56,189,248,0.25),
+    0 0 12px rgba(192,132,252,0.45);
+}
+
 
   .insight{
     margin: 0 0 18px;
     padding-left: 22px;
     font-size: 1.15rem;          
     line-height: 1.7;            
-    color: rgba(255,255,255,0.90);
+    color: rgba(255,255,255,0.96);
 }
+
+    #heart .insight{
+    border-left: 3px solid var(--accent);
+    padding-left: 18px;
+}
+    
     #heart .insight{
     font-size: 1.28rem;       
     line-height: 1.85;        
