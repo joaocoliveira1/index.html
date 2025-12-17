@@ -176,6 +176,20 @@
       font-size: 1.22rem;
 }
 
+    #geo .insight{
+  font-size: 1.28rem;       
+  line-height: 1.85;        
+  padding-left: 0;          
+}
+#geo .insight ul{
+  margin-top: 10px;
+  padding-left: 26px;
+}
+#geo .insight li{
+  margin: 14px 0;
+  font-size: 1.22rem;
+}
+
 
   .insight li{
     margin: 10px 0;
@@ -352,33 +366,171 @@
 </div>
 
 <div id="geo" class="tabcontent">
-  <h2>Geographic & State-Level Disparities</h2>
+  <h2>Geographic &amp; State-Level Disparities</h2>
 
   <p class="subtitle">
-    Mortality rates vary widely across U.S. states, revealing geographic disparities
-    driven by differences in healthcare access, socioeconomic conditions, and local policies.
+    Mortality rates vary widely across U.S. states, revealing geographic disparities driven by differences in
+    healthcare access, socioeconomic conditions, and local policies.
   </p>
 
+  <!-- ================= Visualization 4 ================= -->
   <div class="viz">
-    <h3>State-Level Mortality Patterns</h3>
+    <h3>Visualization 4: Heart Disease Age-Adjusted Death Rate by State (2017)</h3>
     <iframe src="viz4_choropleth.html" title="Choropleth"></iframe>
+
+    <div class="insight">
+      <p><strong>Deeper Insight</strong></p>
+      <p>
+        This choropleth map reveals pronounced geographic disparities in heart disease mortality across the
+        United States in 2017. Rather than a uniform national pattern, heart disease death rates cluster
+        regionally, with several states—particularly in parts of the Southeast and Midwest—exhibiting
+        substantially higher age-adjusted rates than states in the West and Northeast.
+      </p>
+      <p>
+        Because the data are age-adjusted, these differences cannot be explained simply by older populations.
+        Instead, the map points to deeper structural and social factors shaping cardiovascular health outcomes,
+        including differences in socioeconomic status, access to preventive care, prevalence of chronic conditions
+        such as obesity and diabetes, dietary patterns, physical activity environments, and the strength of
+        state-level public health systems. The visualization demonstrates that where someone lives plays a critical
+        role in their risk of dying from heart disease.
+      </p>
+
+      <p><strong>Who benefits &amp; what they can do</strong></p>
+      <ul>
+        <li>
+          <strong>Public health students:</strong>
+          This map provides a clear visual foundation for studying health disparities and regional inequality.
+          Students can use it to explore how social determinants of health, healthcare access, and policy
+          environments contribute to uneven outcomes, and to compare high- and low-performing states for deeper
+          causal analysis.
+        </li>
+        <li>
+          <strong>Policymakers &amp; public health officials:</strong>
+          By identifying states with persistently high heart disease mortality, this visualization supports targeted
+          intervention rather than national one-size-fits-all solutions. Officials can use the map to prioritize
+          funding, tailor prevention programs, and evaluate whether existing state-level policies are effectively
+          reducing cardiovascular risk.
+        </li>
+      </ul>
+    </div>
   </div>
 
+  <!-- ================= Visualization 6 ================= -->
   <div class="viz">
-    <h3>Variation in Death Rates Across States</h3>
+    <h3>Visualization 6: Box Plot — Annual Variability in Death Rates by Cause</h3>
     <img src="viz6.png" alt="Box Plot">
+
+    <div class="insight">
+      <p><strong>Deeper Insight</strong></p>
+      <p>
+        This box plot highlights how stable or volatile mortality rates are for major causes of death over time.
+        Causes such as heart disease and cancer have relatively narrow interquartile ranges, indicating that
+        although their death rates are high, they tend to change gradually from year to year. This reflects the
+        chronic nature of these conditions and the slow-moving influence of medical advances and population-level
+        risk factors.
+      </p>
+      <p>
+        In contrast, causes like stroke and unintentional injuries display greater variability, with wider spreads
+        and more extreme values. This suggests that mortality for these causes is more sensitive to short-term
+        factors such as policy changes, environmental conditions, economic shifts, or sudden public health shocks.
+        The log scale further emphasizes that variability matters not just in absolute terms, but proportionally
+        across causes.
+      </p>
+
+      <p><strong>Who benefits &amp; what they can do</strong></p>
+      <ul>
+        <li>
+          <strong>Public health students:</strong>
+          This visualization helps students distinguish between causes driven by long-term structural trends and those
+          that are more responsive to short-term interventions. It encourages thinking about predictability, volatility,
+          and how different health outcomes respond differently to policy and environmental changes.
+        </li>
+        <li>
+          <strong>Policymakers &amp; public health officials:</strong>
+          Causes with higher variability require flexible and responsive policy planning, as sudden changes can quickly
+          increase mortality. More stable causes, while less volatile, demand sustained long-term investment. This chart
+          supports strategic planning by showing where rapid-response capacity versus long-term prevention is most critical.
+        </li>
+      </ul>
+    </div>
   </div>
 
+  <!-- ================= Visualization 9 ================= -->
   <div class="viz">
-    <h3>State Trends Over Time</h3>
+    <h3>Visualization 9: State-Level Heart Disease Death Rate Trends Over Time (Line Map)</h3>
     <iframe src="viz9_line_map.html" title="State Trends"></iframe>
+
+    <div class="insight">
+      <p><strong>Deeper Insight</strong></p>
+      <p>
+        While national averages suggest a single shared story, this state-level visualization reveals a far more complex
+        reality. Although most states experienced declining heart disease mortality, the speed, timing, and consistency of
+        those declines vary substantially. Some states show early and sustained improvements, while others decline more
+        slowly or flatten earlier.
+      </p>
+      <p>
+        These differences highlight the importance of local context. Variations in healthcare infrastructure, insurance
+        coverage, preventive screening, socioeconomic conditions, diet, physical activity environments, and state-level
+        public health policies all contribute to divergent outcomes. The visualization demonstrates that heart disease is
+        not just a national issue but a geographically uneven one, shaped by where people live as much as by individual
+        risk factors.
+      </p>
+
+      <p><strong>Who benefits &amp; what they can do</strong></p>
+      <ul>
+        <li>
+          <strong>Public health students:</strong>
+          This map encourages students to move beyond national narratives and think spatially about health outcomes. It supports
+          comparative analysis between states and invites investigation into how policy, funding, and social conditions translate
+          into measurable mortality differences.
+        </li>
+        <li>
+          <strong>Policymakers &amp; public health officials:</strong>
+          By identifying states that lag behind or plateau earlier, this visualization helps target state-specific interventions.
+          Officials can benchmark their state against peers, evaluate which policies are associated with faster improvements, and
+          justify reallocating resources toward regions where heart disease remains persistently high.
+        </li>
+      </ul>
+    </div>
   </div>
 
+  <!-- ================= Visualization 10 ================= -->
   <div class="viz">
-    <h3>Distribution of State-Level Death Rates</h3>
+    <h3>Visualization 10: Violin Plot — State Distribution of Death Rates by Cause (2017)</h3>
     <img src="viz10.png" alt="Violin Plot">
+
+    <div class="insight">
+      <p><strong>Deeper Insight</strong></p>
+      <p>
+        The violin plot reveals how death rates are distributed across states for each cause, moving beyond averages to show the
+        full range of outcomes. For heart disease and cancer, the wide shapes indicate substantial state-to-state variation, meaning
+        that while national averages appear stable, individual states experience very different mortality burdens.
+      </p>
+      <p>
+        Long tails and asymmetry in several violins highlight the presence of outlier states with unusually high or low death rates.
+        This suggests that national statistics can obscure localized crises or successes. The visualization underscores that mortality
+        risk is unevenly distributed and heavily influenced by state-level conditions such as healthcare access, socioeconomic
+        inequality, and public health infrastructure.
+      </p>
+
+      <p><strong>Who benefits &amp; what they can do</strong></p>
+      <ul>
+        <li>
+          <strong>Public health students:</strong>
+          This chart helps students understand distributional thinking—why means alone are insufficient and how disparities manifest
+          across geographic units. It encourages analysis of why certain states fall into the tails of the distribution.
+        </li>
+        <li>
+          <strong>Policymakers &amp; public health officials:</strong>
+          The violin plot supports benchmarking and targeted action. States in the upper tails may require urgent intervention, while
+          lower-performing states can serve as models for effective policies and prevention strategies.
+        </li>
+      </ul>
+    </div>
   </div>
+
 </div>
+
     
 <div id="heart" class="tabcontent">
   <h2>Heart Disease: Focused Insights</h2>
