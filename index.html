@@ -19,11 +19,17 @@
 
 
   .tabs{
-    margin: 18px 0 10px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
+      margin: 18px 0 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+}
+    .tablink.right{
+       margin-left: auto;
+}
+
   
   .tablink{
     appearance: none;
@@ -264,6 +270,12 @@
   <button type="button" class="tablink" onclick="openTab(event, 'heart')">
     Heart Disease Insights
   </button>
+
+  <a class="tablink right"
+     href="https://catalog.data.gov/dataset/nchs-leading-causes-of-death-united-states"
+     target="_blank" rel="noopener">
+    Data Source ↗
+  </a>
 </nav>
 
 
